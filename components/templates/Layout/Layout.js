@@ -1,12 +1,10 @@
 import React, {useState} from 'react';
-// import Header from '../../organisms/Header';
-// import Footer from '../../organisms/Footer';
 import ThemeToggler from '../../organisms/ThemeToggler';
 
 // Theming
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme } from "../../util/Themes";
-import  {useDarkMode} from "../../util/useDarkMode"
+import { lightTheme, darkTheme } from "../../../util/styleComponentUtil/Themes";
+import  {useDarkMode} from "../../../util/useDarkMode";
 
 
 const Layout = ({ children, className }) => {
@@ -15,17 +13,16 @@ const Layout = ({ children, className }) => {
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
   
 if(!mountedComponent) return <div/>
-return(
+return (
   <ThemeProvider theme={themeMode}>
-    {/* <Header pageData={headerFooter} /> */}
-      <ThemeToggler theme={theme} toggleTheme={themeToggler} />
-    <main className={`${className || ''}`}>
-      {children}
+    <ThemeToggler theme={theme} toggleTheme={themeToggler} />
+    <main className={`${className  || ''} container`}>
+      <div className="vertical-rule" />
+      <div className="col-xs-12 col-sm-11 col-sm-offset-2 col-lg-10 col-lg-offset-2">
+        {children}
+      </div>
     </main>
-    {/* <Footer pageData={headerFooter} /> */}
   </ThemeProvider>
 )};
-
-// Layout.defaultProps = {};
 
 export default Layout;

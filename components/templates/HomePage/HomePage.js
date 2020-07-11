@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { dataFetcher } from '../../util/dataFetcher';
-import { API_DOMAIN, TOP_STORIES } from '../../util/config/env.json';
 import Anchor from '../../atoms/Anchor';
+import { getToStoriesID } from '../../../services/hackerNewsApi';
+import TopStories from '../../organisms/TopStories/TopStories';
+import SectionHeading from '../../organisms/SectionHeading';
 
 const HomePage = () => {
+  const [storyIds, setStoryIds] = useState([]);
+  
   
   useEffect(() => {
-    const topStoriesApi = `${API_DOMAIN}${TOP_STORIES}`;
-    // dataFetcher(topStoriesApi).then(res=> {
-    //   console.log(res)
-    // })
+    getToStoriesID().then(ids => {
+      setStoryIds(ids)
+    })
   }, []);
   
   return (
-    <Anchor to={'about'} title={'About1'}>HomePage</Anchor>
+    <>
+      <SectionHeading sectionTitle='Top News' sectionPara='Some of top trending news on stories from the Hacker News API' />
+      <TopStories storyIds={storyIds} />
+    </>
   )
 }
  

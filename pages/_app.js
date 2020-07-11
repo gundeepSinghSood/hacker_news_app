@@ -1,5 +1,6 @@
 import { PageTransition } from 'next-page-transitions';
-import { GlobalStyles } from "../components/util/globalStyles";
+import { GlobalStyles } from "../util/styleComponentUtil/globalStyles";
+import '../static/styles/vendor/index.css';
 
 import Layout from '../components/templates/Layout';
 import Loader from '../components/Loader';
@@ -8,8 +9,7 @@ const TIMEOUT = 100
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <GlobalStyles/>
+    <>
       <PageTransition
         timeout={TIMEOUT}
         classNames="page-transition"
@@ -21,9 +21,12 @@ function MyApp({ Component, pageProps }) {
         }}
         loadingClassNames="loading-indicator"
       >
+      <Layout>
+        <GlobalStyles/>
         <Component {...pageProps} />
+      </Layout>
       </PageTransition>
-     </Layout>
+     </>
   )
 }
 

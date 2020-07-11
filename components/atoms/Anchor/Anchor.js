@@ -4,7 +4,7 @@
  */
 import Link from 'next/link';
 import type from 'react';
-import withStyles from '../../util/withStyles';
+import withStyles from '../../../util/styleComponentUtil/withStyles';
 import styles from './Anchor.style';
 
 const Anchor = props => {

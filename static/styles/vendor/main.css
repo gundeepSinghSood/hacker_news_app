@@ -1,0 +1,15 @@
+.vertical-rule {
+  background-color:#b2b2b2;
+  width: 1px;
+  position: absolute;
+  top: -100%;
+  bottom: 2px;
+  left: 185px;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 600px) {
+  .vertical-rule { 
+    display: none;
+  }
+}
