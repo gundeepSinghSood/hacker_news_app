@@ -1,4 +1,5 @@
 import { createGlobalStyle} from "styled-components"
+import modernNormalize from "@styled/modern-normalize";
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -8,6 +9,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
     transition: all 0.50s linear;
   }
+  
+  ${modernNormalize}
   
   .page-transition-enter {
     opacity: 0;

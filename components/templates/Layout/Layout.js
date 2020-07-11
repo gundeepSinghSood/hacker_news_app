@@ -10,11 +10,11 @@ import  {useDarkMode} from "../../util/useDarkMode"
 
 
 const Layout = ({ children, className }) => {
-  const [theme, themeToggler] = useDarkMode();
+  const [theme, themeToggler, mountedComponent] = useDarkMode();
   
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
   
-
+if(!mountedComponent) return <div/>
 return(
   <ThemeProvider theme={themeMode}>
     {/* <Header pageData={headerFooter} /> */}
