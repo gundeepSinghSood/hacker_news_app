@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import HomePage from '../components/templates/HomePage/HomePage';
 
 const Index = () => (
-  <div className="container bg-primary page">
-    <h1>Hello, world!</h1>
+  <div>
     <Link href="/about">
       <a className="btn btn-light">About us</a>
     </Link>
+    <HomePage/>
   </div>
 )
 
