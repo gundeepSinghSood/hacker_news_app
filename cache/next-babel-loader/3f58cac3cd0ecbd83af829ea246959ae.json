@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './Search';","map":{"version":3,"sources":["/Users/gunsood/Documents/Projects/Hacker_News_Article_App/hacker-news-app/components/molecules/Search/index.js"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,UAAtB","sourcesContent":["export {default} from './Search'"]},"metadata":{},"sourceType":"module"}

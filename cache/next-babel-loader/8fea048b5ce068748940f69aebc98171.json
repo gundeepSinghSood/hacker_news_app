@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './SectionHeading';","map":{"version":3,"sources":["/Users/gunsood/Documents/Projects/Hacker_News_Article_App/hacker-news-app/components/organisms/SectionHeading/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,kBAAxB","sourcesContent":["export { default } from './SectionHeading';"]},"metadata":{},"sourceType":"module"}

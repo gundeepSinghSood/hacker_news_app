@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React, { useState } from 'react';\n\nconst Search = props => {\n  return __jsx(\"div\", {\n    className: \"col-lg-4\"\n  }, __jsx(\"i\", {\n    className: \"fa fa-search\",\n    \"aria-hidden\": \"true\"\n  }));\n};\n\nSearch.defaultProps = {};\nexport default Search;","map":null,"metadata":{},"sourceType":"module"}

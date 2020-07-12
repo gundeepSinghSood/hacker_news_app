@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled, { css } from \"styled-components\";\nexport default css([\"\"]);\nexport const StyledHeader = styled.header.withConfig({\n  displayName: \"Headerstyle__StyledHeader\",\n  componentId: \"ejf1oe-0\"\n})([\"{height:70px;left:185px;z-index:100;position:fixed;transform:rotate(90deg);}\"]);","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var MAX_STORIES = 500;\nexport var INITIAL_STORY_LOAD = 30;","map":null,"metadata":{},"sourceType":"module"}
