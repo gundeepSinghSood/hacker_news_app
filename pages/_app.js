@@ -1,6 +1,6 @@
 import { PageTransition } from 'next-page-transitions';
 import { GlobalStyles } from "../util/styleComponentUtil/globalStyles";
-import '../static/styles/vendor/index.css';
+import '../public/styles/vendor/index.css';
 
 import Layout from '../components/templates/Layout';
 import Loader from '../components/Loader';

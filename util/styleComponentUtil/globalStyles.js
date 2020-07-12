@@ -6,8 +6,28 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
+    font-family: BalooDa-Regular, Arial, Roboto, sans-serif;
     transition: all 0.50s linear;
+  }
+  
+  main {
+    margin-top: 7rem;
+  }
+  
+  @font-face {
+    font-family: 'BalooDa-Regular';
+    src: url('/fonts/BalooDa2-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+    @font-face {
+    font-family: 'BalooDa-Bold';
+    src: url('/fonts/BalooDa2-Bold.ttf');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
   }
   
   ${modernNormalize}
