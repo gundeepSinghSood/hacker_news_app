@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import ThemeToggler from '../../organisms/ThemeToggler';
+import Header from '../../organisms/Header';
 
 // Theming
 import { ThemeProvider } from 'styled-components';
@@ -15,7 +15,7 @@ const Layout = ({ children, className }) => {
 if(!mountedComponent) return <div/>
 return (
   <ThemeProvider theme={themeMode}>
-    <ThemeToggler theme={theme} toggleTheme={themeToggler} />
+    <Header theme={theme} themeToggler={themeToggler} />
     <main className={`${className  || ''} container`}>
       <div className="vertical-rule" />
       <div className="col-xs-12 col-sm-11 col-sm-offset-2 col-lg-10 col-lg-offset-2">
