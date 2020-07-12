@@ -1,0 +1,11 @@
+{
+  "name": "Hacker News App",
+  "short_name": "HNA",
+  "theme_color": "#dc3d24",
+  "background_color": "#dc3d24",
+  "display": "fullscreen",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": null,
+  "splash_pages": null
+}

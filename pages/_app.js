@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { PageTransition } from 'next-page-transitions';
 import { GlobalStyles } from "../util/styleComponentUtil/globalStyles";
 import '../public/styles/vendor/index.css';
@@ -10,6 +11,9 @@ const TIMEOUT = 100
 function MyApp({ Component, pageProps }) {
   return (
     <>
+    <Head>
+      <title>Hacker News App</title>
+    </Head>
       <PageTransition
         timeout={TIMEOUT}
         classNames="page-transition"

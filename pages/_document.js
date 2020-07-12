@@ -19,11 +19,19 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
+          <meta name="description" content="Hacker News API" />
+          <meta name="keywords" content="hacker news api react nextjs" />
+          <meta charSet="utf-8" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+          <link rel="manifest" href="/manifest.json" />
+          {/* Chrome, Firefox OS and Opera  */}
+          <meta name="theme-color" content="#DC3D24" />
+          {/* Windows Phone  */}
+          <meta name="msapplication-navbutton-color" content="#DC3D24" />
+          {/* iOS Safari  */}
+          <meta name="apple-mobile-web-app-status-bar-style" content="#DC3D24" />
           {styleTags}
         </Head>
         <body>
