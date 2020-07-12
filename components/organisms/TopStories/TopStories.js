@@ -9,7 +9,6 @@ const TopStories = ({storyIds}) => {
    
   useEffect(() => {
     async function getTopStories() {
-      console.log(storyIds)
       try {
         const promises = storyIds
           .map(id =>

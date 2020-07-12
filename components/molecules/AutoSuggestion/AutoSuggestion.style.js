@@ -9,7 +9,7 @@ export const StyledAutoSuggestion = styled.div`{
   color: ${({ theme }) => theme.text};
   margin-top: 40px;
   box-shadow: -1px 11px 20px 0px rgba(0,0,0,0.2);
-  min-height: 40px;
+  min-height: 350px;
   overflow-y: scroll;
   padding: 10px;
   border-radius: 10px;

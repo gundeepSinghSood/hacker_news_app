@@ -10,6 +10,7 @@ const Search = ({className}) => {
    const buttonInput = useRef();
    const [showAutoSuggest, setShowAutoSuggest] = useState(false);
    const [suggestionData, setSuggestionData] = useState([]);
+   const [showSearch, setShowSearch] = useState(false);
    
    useEffect(() => {
     const input = document.getElementById("search-input");
@@ -25,13 +26,12 @@ const Search = ({className}) => {
     const input = document.getElementById("search-input");
     const searchBtn = document.getElementById("search-btn");
     const searchBox = document.getElementById("search-container");
-    const body = document.querySelector('body');
     
     if (input.classList.contains('mobile-input')) {
       input.classList.remove('mobile-input');
       searchBox.classList.remove('full-width');
       searchBox.classList.remove('col-xs-12');
-      body.style.position = 'relative';
+      toggleBodyClass(false)
       
       setShowAutoSuggest(false);
       setSuggestionData([]);
@@ -59,23 +59,31 @@ const Search = ({className}) => {
   }
   
   const triggerAnimation = () => {
+    const input = document.getElementById("search-input");
     if (isMobile()) {
-      const input = document.getElementById("search-input");
       const searchBox = document.getElementById("search-container");
-      const body = document.querySelector('body');
-      
-      input.classList.add("mobile-input");
-      searchBox.classList.add('full-width')
-      searchBox.classList.add('col-xs-12')
+  
+      searchBox.classList.add('full-width');
+      searchBox.classList.add('col-xs-12');
+    }
+    input.classList.add("mobile-input");
+    toggleBodyClass(true)
+  }
+  
+  const toggleBodyClass = (isFull) => {
+    const body = document.querySelector('body');
+    if(isFull) {
       body.style.position = 'fixed';
+    } else {
+      body.style.position = 'relative';
     }
   }
   
   return (
     <StyledSearch id='search-container' className={`${className} row end-xs col-xs-6 col-lg-4`}>
       <form id="content" autocomplete="off">
-        <input type="text" name="input" v="input" onFocus={triggerAnimation} onChange={getSuggestions} placeholder={isMobile() ? 'Search' : ''} id="search-input" ref={searchInput} />
-        <button type="reset" className="search" id="search-btn" onClick={searchAnimation} ref={buttonInput}></button>
+        <input disable={showSearch} type="text" name="input" v="input" onFocus={triggerAnimation} onChange={getSuggestions} placeholder={isMobile() ? 'Search' : ''} id="search-input" ref={searchInput} />
+        <button disable={showSearch} type="reset" className="search" id="search-btn" onClick={searchAnimation} ref={buttonInput}></button>
       </form>
       {showAutoSuggest && <AutoSuggestion suggestionData={suggestionData}/>}
     </StyledSearch>
