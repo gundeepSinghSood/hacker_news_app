@@ -5,6 +5,7 @@ export const lightTheme = {
     background: '#363537',
     highLight: '#DC3D24',
     fontFamilyRegular: 'BalooDa-Regular',
+    borderColor: 'rgba(54, 53, 55, 0.25882352941176473)',
 }
 
 export const darkTheme = {
@@ -15,4 +16,5 @@ export const darkTheme = {
     toggleBorder: '#6B8096',
     background: '#232B2B',
     fontFamilyRegular: 'BalooDa-Regular',
+    borderColor: 'rgba(250, 250, 250, 0.23921568627450981)',
 }

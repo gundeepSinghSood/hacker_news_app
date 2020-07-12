@@ -9,8 +9,6 @@ const Story = memo(function Story({storyId}) {
   const [storyData, setStoryData] = useState({});
   
   useEffect(() => {
-    // to={storyData.url} title={storyData.title}
-    console.log(storyData.url)
     getSingleStory(storyId).then(storyData => storyData && storyData.url && setStoryData(storyData))
   }, []);
   

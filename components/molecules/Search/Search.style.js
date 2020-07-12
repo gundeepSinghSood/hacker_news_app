@@ -113,5 +113,29 @@ export const StyledSearch = styled.div`{
       width: 230px;
     }
   }
+  
+  &.full-width {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    left: 8px;
+    top: 0px;
+    z-index: 9999999;
+    background-color: ${({ theme }) => theme.body};
+    padding: 10px;
+    form {
+      width: 100%;
+    }
+    .mobile-input {
+      width: 100%;
+    }
+    .auto-suggest-container {
+      position: relative;
+      width: 100%;
+      box-shadow: none;
+      margin-top: 0px;
+      height: 100%;
+    }
+  }
 
 }` 

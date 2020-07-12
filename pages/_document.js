@@ -25,7 +25,6 @@ export default class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-          <link rel="manifest" href="/manifest.json" />
           {/* Chrome, Firefox OS and Opera  */}
           <meta name="theme-color" content="#DC3D24" />
           {/* Windows Phone  */}
