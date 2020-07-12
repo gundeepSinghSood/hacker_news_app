@@ -8,7 +8,7 @@ const AutoSuggestion = ({suggestionData, className}) => {
   
   return (
     <StyledAutoSuggestion className={`${className} auto-suggest-container`}>
-    {suggestionData.length
+    {suggestionData && suggestionData.length
       ? suggestionData.map(item => (
       <Anchor forceClick={true} href={item.url} title={item.title} target="_blank">
         <p>{item.title}</p>

@@ -4,6 +4,7 @@ import { getToStoriesID } from '../../../services/hackerNewsApi';
 import TopStories from '../../organisms/TopStories/TopStories';
 import SectionHeading from '../../organisms/SectionHeading';
 import { isMobile } from '../../../util/index';
+import Filter from '../../molecules/Filter';
 
 const HomePage = () => {
   const [storyIds, setStoryIds] = useState([]);
@@ -18,6 +19,7 @@ const HomePage = () => {
   return (
     <>
       {isMobile() && <SectionHeading sectionTitle='Top News' sectionPara='Some of top trending news on stories from the Hacker News API' />}
+      <Filter/>
       <TopStories storyIds={storyIds} />
     </>
   )
