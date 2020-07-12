@@ -12,9 +12,13 @@ const TopStories = ({storyIds}) => {
   
   // 1st load 0 - 30
   // 2nd load 0 - 60
-  return storyIds.slice(0, count ).map(storyId => {
-    return <Story key={storyId} storyId={storyId}/>
-  })
+  return (
+    <div className="row">
+    {storyIds.slice(0, count ).map(storyId => {
+      return <Story key={storyId} storyId={storyId}/>
+    })}
+  </div>
+  )
 }
  
 export default TopStories;

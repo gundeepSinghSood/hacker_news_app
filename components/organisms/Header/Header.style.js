@@ -13,6 +13,10 @@ export const StyledHeader = styled.header`{
   
   .header-logo {
     color: ${({ theme }) => theme.highLight};
-    font-family: ${props => props.theme.fontFamily};
+    font-family: ${props => props.theme.fontFamilyRegular};
+  }
+  
+  .header-container {
+    min-height: 4.6rem;
   }
 }` 

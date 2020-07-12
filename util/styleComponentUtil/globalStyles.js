@@ -30,6 +30,12 @@ export const GlobalStyles = createGlobalStyle`
     font-display: swap;
   }
   
+  @media only screen and (max-width : 640px) {
+    .is-mobile {
+      display: none;
+    }
+  }
+  
   ${modernNormalize}
   
   .page-transition-enter {

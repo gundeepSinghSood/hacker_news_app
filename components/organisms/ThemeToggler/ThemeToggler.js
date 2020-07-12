@@ -5,9 +5,11 @@ import styles, { Button } from './ThemeToggler.style';
 
 const ThemeToggler = ({theme,  toggleTheme }) => {
     return (
-        <Button onClick={toggleTheme} >
-          <i className="fa fa-sun-o" aria-hidden="true"></i>
-        </Button>
+        <div className="row end-xs col-xs-2 col-xs-offset-1 col-lg-1">
+            <Button onClick={toggleTheme} >
+            <i className="fa fa-sun-o" aria-hidden="true"></i>
+            </Button>
+        </div>
     );
 };
 

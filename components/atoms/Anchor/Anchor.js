@@ -38,7 +38,7 @@ const Anchor = props => {
         </a>
       ) : (
         <a
-          className={`${className} ${hoverAnimation ? 'hover-animation' : ''}`}
+          className={`${className}`}
           {...other}>
           {children}
         </a>

@@ -4,7 +4,7 @@ export const lightTheme = {
     toggleBorder: '#FFF',
     background: '#363537',
     highLight: '#DC3D24',
-    fontFamily: 'BalooDa-Regular',
+    fontFamilyRegular: 'BalooDa-Regular',
 }
 
 export const darkTheme = {
@@ -14,5 +14,5 @@ export const darkTheme = {
     highLight: '#DC3D24',
     toggleBorder: '#6B8096',
     background: '#232B2B',
-    fontFamily: 'BalooDa-Regular',
+    fontFamilyRegular: 'BalooDa-Regular',
 }

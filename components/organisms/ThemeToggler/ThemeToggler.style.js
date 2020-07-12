@@ -16,4 +16,8 @@ export const Button = styled.button`{
   cursor: pointer;
   font-size:0.8rem;
   padding: 0 0.6rem;
+  
+  .fa-sun-o {
+    font-size: 30px;
+  }
 }`; 

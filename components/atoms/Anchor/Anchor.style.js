@@ -6,6 +6,7 @@ export default css`
   color: ${props => props.theme.textColorWhite};
   padding: ${props => (props.isButtonLink ? '0.75rem 1.5rem' : '0')};
   display: block;
+  width: 100%;
   .icon-next-arrow-white {
     font-size: ${props => props.theme.fontExtraSmall};
     &::before {
